@@ -18,6 +18,7 @@
  */
 
 @Application(defaultController = org.sample.booking.controllers.Application.class)
+@Bindings({@Binding(Flash.class), @Binding(org.sample.booking.controllers.Login.class)})
 @Portlet
 @Assets(
     scripts = {
@@ -33,6 +34,8 @@
 ) package org.sample.booking;
 
 import juzu.Application;
+import juzu.plugin.binding.Bindings;
+import juzu.plugin.binding.Binding;
 import juzu.asset.AssetLocation;
 import juzu.plugin.asset.Assets;
 import juzu.plugin.asset.Script;

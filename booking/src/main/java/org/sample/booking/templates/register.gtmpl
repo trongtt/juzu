@@ -3,7 +3,7 @@
 
 <h1>Register</h1>
 
-<form action="@{Application.saveUser()}" method="post">
+<form name="register" action="@{Application.saveUser()}" method="post">
         <p>
             <strong>Username:</strong> <input type="text" name="username" size="16" value=""> *
             <span class="error"></span>
